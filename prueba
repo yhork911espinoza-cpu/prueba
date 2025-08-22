@@ -1,0 +1,4 @@
+Para i = 1 hasta n-1
+   Para j = 1 hasta n-i
+      Si A[j] > A[j+1]
+         Intercambiar A[j] y A[j+1]
