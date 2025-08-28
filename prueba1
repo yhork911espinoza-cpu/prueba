@@ -1,0 +1,23 @@
+Algoritmo OrdenacionExterna
+    Definir tamañoBloque como Entero
+    tamañoBloque <- 1000   // número de registros que caben en memoria
+    
+    Abrir archivo "datos.txt" como lectura
+    
+    Mientras no sea fin del archivo
+        Leer hasta tamañoBloque elementos en un arreglo
+        Ordenar arreglo en memoria (por ejemplo, usando QuickSort)
+        Guardar arreglo ordenado en un archivo temporal (ej: "temp1.txt", "temp2.txt", ...)
+    FinMientras
+    
+    // Ahora tenemos varios archivos temporales ordenados
+    
+    Mientras haya más de un archivo temporal
+        Tomar dos archivos temporales
+        Fusionarlos en un nuevo archivo ordenado
+        Eliminar los archivos temporales originales
+        Guardar el nuevo archivo temporal
+    FinMientras
+    
+    Renombrar el último archivo temporal como "datos_ordenados.txt"
+FinAlgoritmo
